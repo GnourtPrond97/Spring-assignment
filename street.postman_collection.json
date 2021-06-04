@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "4e5c1826-1532-49ae-9ec4-69ae57665246",
+		"name": "street",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "seed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/street/seed/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"street",
+						"seed",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/street/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"street",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"name\": \"Nguy Như Kon Tum\",\r\n        \"foundingDate\": \"1622774596360\",\r\n        \"description\": \"Tên rất Tây Nguyên nhưng lại ở Hà Nội.\",\r\n        \"status\": \"1\",\r\n        \"districtId\": \"1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/street/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"street",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listDistrict",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
